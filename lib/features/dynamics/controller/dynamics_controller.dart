@@ -15,6 +15,7 @@ class DynamicsController with ChangeNotifier {
   Future<void> getDynamics() async {
     error = null;
     dynamics.clear();
+    alert=null;
 
     isloading = true;
     notifyListeners();
